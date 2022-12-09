@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="css/style.css" /> 
+    <title>Cookies</title>
+</head>
+<body>
+    
+    <main>
+    <nav> 
+        <a id="white" href="index.html">Home</a> 
+        <a id="white" href="/recipe.html">Recipe</a> 
+        <a id="white" href="#imp">Impressum</a>
+        <br>
+    </nav>
+    <header> 
+        <h1>Welcome to my recipe</h1>
+        <p>My name is Sairam Vijayakumar and I am a baker since 2005.</p>
+    </header> 
+    <article> 
+        <h2>Slideshow</h2>
+        <div class="w3-content" style="max-width:800px" >
+            <img class="Slides" src="/images/IMG_1126.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1129.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1130.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1131.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1134.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1135.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1136.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1137.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1138.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1139.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1141.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1145.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1149.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1154.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1161.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1164.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1166.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1168.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1171.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1173.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1174.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1176.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1178.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1179.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1183.jpg" style="width:100%">
+            <img class="Slides" src="/images/IMG_1185.jpg" style="width:100%">
+
+
+            
+          </div>
+
+          <script>
+            var myIndex = 0;
+            carousel();
+            
+            function carousel() {
+              var i;
+              var x = document.getElementsByClassName("Slides");
+              for (i = 0; i < x.length; i++) {
+                x[i].style.display = "none";  
+              }
+              myIndex++;
+              if (myIndex > x.length) {myIndex = 1}    
+              x[myIndex-1].style.display = "block";  
+              setTimeout(carousel, 2000); 
+            }
+            </script>
+    </article>
+    <footer>
+        <hr />
+            <small id="imp">Impressum</small><br />
+            <p>
+                Sairam Vijayakumar<br>
+                Herostrasse 12<br>
+                8048 Zürich<br>
+                Email: sairam.vijayakumar@noseryoung.com<br>
+                Tel: 044 696 96 96
+            </p>
+    </footer>
+</main>
+</body>
+</html>
